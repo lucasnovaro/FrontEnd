@@ -22,7 +22,13 @@ export default function Nav() {
                   <li>
                     <Link to="/cadastro">Cadastro</Link>
                  </li>
+                   <li>
+                    <Link to="/tipodoacao">Tipos de Doação</Link>
+                 </li>
                  
+                  <li>
+                    <Link to="/categoria">Categorias</Link>
+                 </li>
               
             </ul>
         </nav>
