@@ -40,8 +40,8 @@ export default function Categoria() {
           value={novaCategoria}
           onChange={(e) => setNovaCategoria(e.target.value)}
         />
-        <button type="button" onClick={adicionarCategoria}>
-          Adicionar
+        <button type="button" onClick={adicionarTipo}>
+        ➕
         </button>
 
         {/* Lista antes de salvar */}
@@ -50,9 +50,9 @@ export default function Categoria() {
             {categorias.map((cat) => (
               <li key={cat.id}>
                 {cat.nome}
-                <button type="button" onClick={() => removerCategoria(cat.id)}>
-                  Remover
-                </button>
+              <button type="button" onClick={() => removerTipo(tipo.id)}>
+                🗑
+              </button>
               </li>
             ))}
           </ul>
@@ -78,7 +78,7 @@ export default function Categoria() {
                 <td>{index + 1}</td>
                 <td>{s.nome}</td>
                 <td>
-                  <button onClick={() => removerSalva(s.id)}>Excluir</button>
+                  <button onClick={() => removerSalvo(s.id)}>🗑</button>
                 </td>
               </tr>
             ))}
